@@ -1,0 +1,133 @@
+﻿<Window x:Class="Snake.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Snake"
+        mc:Ignorable="d"
+        Title="Snake" 
+        Height="500" Width="800" 
+        MinWidth="300" MinHeight="300"
+        WindowStartupLocation="CenterScreen"
+        Icon="assets/snake-icon-32x32.png"
+        PreviewKeyDown="Window_PreviewKeyDown"
+        KeyDown="Window_KeyDown">
+    <Window.Background>
+        <ImageBrush ImageSource="assets/bg.jpg"/>
+    </Window.Background>
+    <Viewbox>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock x:Name="tb_scoreText"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       Text="SCORE 0"
+                       FontSize="22"
+                       Margin="10"
+                       Foreground="White"
+                       Visibility="Hidden">
+            </TextBlock>
+
+            <Border x:Name="br_gridBorder"
+                    Grid.Row="1"
+                    BorderThickness="1"
+                    BorderBrush="{DynamicResource GridLineColor}"
+                    RenderOptions.EdgeMode="Aliased"
+                    Margin="20,0,20,20"
+                    Visibility="Hidden">
+                <UniformGrid x:Name="ug_gameGrid"
+                             Width="400"
+                            Height="400"
+                            Background="{DynamicResource GridBackgroundColor}"
+                            SnapsToDevicePixels="True"
+                            RenderOptions.BitmapScalingMode="HighQuality">
+                </UniformGrid>
+                <Border.Effect>
+                    <BlurEffect Radius="15"/>
+                </Border.Effect>
+            </Border>
+
+            <Border x:Name="br_overlay"
+                    Grid.Row="1"
+                    Width="{Binding Path=ActualWidth, ElementName=br_gridBorder}"
+                    Height="{Binding Path=ActualHeight, ElementName=br_gridBorder}"
+                    Margin="{Binding Path=Margin, ElementName=br_gridBorder}"
+                    RenderOptions.EdgeMode="Aliased"
+                    Visibility="Hidden">
+                <TextBlock x:Name="tb_overlay"
+                           Text="PRESS ANY KEY TO START"
+                           FontSize="26"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           TextWrapping="Wrap"
+                           Foreground="White"
+                           Visibility="Hidden">
+                </TextBlock>
+            </Border>
+
+            <Image x:Name="img_snake" 
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Top"
+                   Source="assets/MainSnake.png"
+                   Grid.Row="1"
+                   Width="400"
+                   Margin="0,35,0,0"
+                   Visibility="Visible">
+            </Image>
+
+            <StackPanel x:Name="sp_buttons" 
+                        Grid.Row="2" 
+                        Orientation="Horizontal"
+                        VerticalAlignment="Bottom"
+                        HorizontalAlignment="Center"
+                        Margin="0,0,0,90"
+                        Visibility="Visible">
+                <Button x:Name="btn_play"
+                        Width="60"
+                        Height="60"
+                        Background="Transparent"
+                        BorderBrush="Transparent"
+                        Click="ButtonPlay_Click">
+                    <Image x:Name="img_play"
+                           Source="assets/Play.png"
+                           Stretch="Uniform"
+                           MouseEnter="ImagePlay_MouseEnter"
+                           MouseLeave="ImagePlay_MouseLeave">
+                    </Image>
+                </Button>
+
+                <Button x:Name="btn_options"
+                        Width="60"
+                        Height="60"
+                        Background="Transparent"
+                        BorderBrush="Transparent"
+                        Click="ButtonOptions_Click">
+                    <Image x:Name="img_options" 
+                           Source="assets/Options.png"
+                           Stretch="Uniform"
+                           MouseEnter="ImageOptions_MouseEnter"
+                           MouseLeave="ImageOptions_MouseLeave">
+                    </Image>
+                </Button>
+
+                <Button x:Name="btn_exit"
+                        Width="60"
+                        Height="60"
+                        Background="Transparent"
+                        BorderBrush="Transparent"
+                        Click="ButtonExit_Click">
+                    <Image x:Name="img_exit"
+                           Source="assets/Exit.png"
+                           Stretch="Uniform"
+                           MouseEnter="ImageExit_MouseEnter"
+                           MouseLeave="ImageExit_MouseLeave">
+                    </Image>
+                </Button>
+            </StackPanel>
+        </Grid>
+    </Viewbox>
+</Window>

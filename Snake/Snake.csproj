@@ -1,0 +1,62 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="assets\apple-16x16.png" />
+    <None Remove="assets\apple-24x24.png" />
+    <None Remove="assets\bg.jpg" />
+    <None Remove="assets\Body.png" />
+    <None Remove="assets\DeadBody.png" />
+    <None Remove="assets\DeadHead.png" />
+    <None Remove="assets\Empty.png" />
+    <None Remove="assets\Exit.png" />
+    <None Remove="assets\ExitActive.png" />
+    <None Remove="assets\Food.jpg" />
+    <None Remove="assets\Food.png" />
+    <None Remove="assets\grass-16x16.png" />
+    <None Remove="assets\Head.png" />
+    <None Remove="assets\Home.png" />
+    <None Remove="assets\Hover.wav" />
+    <None Remove="assets\MainOptions.png" />
+    <None Remove="assets\MainSnake.png" />
+    <None Remove="assets\Options.png" />
+    <None Remove="assets\OptionsActive.png" />
+    <None Remove="assets\Play.png" />
+    <None Remove="assets\PlayActive.png" />
+    <None Remove="assets\snake-icon-32x32.png" />
+    <None Remove="assets\snake-main-screen-64x64.png" />
+    <None Remove="assets\snake-main-screen-80x80.png" />
+    <None Remove="assets\Volume.png" />
+    <None Remove="assets\VolumeRed.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="assets\bg.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="assets\Body.png" />
+    <Resource Include="assets\Empty.png" />
+    <Resource Include="assets\Exit.png" />
+    <Resource Include="assets\ExitActive.png" />
+    <Resource Include="assets\Food.png" />
+    <Resource Include="assets\Head.png" />
+    <Resource Include="assets\Home.png" />
+    <Resource Include="assets\MainOptions.png" />
+    <Resource Include="assets\MainSnake.png" />
+    <Resource Include="assets\Options.png" />
+    <Resource Include="assets\OptionsActive.png" />
+    <Resource Include="assets\Play.png" />
+    <Resource Include="assets\PlayActive.png" />
+    <Resource Include="assets\snake-icon-32x32.png" />
+    <Resource Include="assets\Volume.png" />
+    <Resource Include="assets\VolumeRed.png" />
+  </ItemGroup>
+
+</Project>

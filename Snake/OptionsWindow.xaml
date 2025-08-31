@@ -1,0 +1,81 @@
+﻿<Window x:Class="Snake.OptionsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Snake"
+        mc:Ignorable="d"
+        Title="OptionsWindow" 
+        Height="500" Width="800" 
+        MinWidth="300" MinHeight="300"
+        WindowStartupLocation="CenterScreen"
+        Icon="assets/snake-icon-32x32.png"
+        Closed="Window_Closed"
+        Activated="Window_Activated">
+    <Window.Background>
+        <ImageBrush ImageSource="assets/bg.jpg"/>
+    </Window.Background>
+    <Grid>
+        <Image Source="assets/MainOptions.png"
+               Width="500"
+               Height="500"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Top"
+               Margin="0,50,0,0">
+        </Image>
+
+        <Button x:Name="btn_volume" 
+                Width="60"
+                Height="60"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Bottom"
+                Margin="0,0,150,80"
+                Background="Transparent"
+                BorderBrush="Transparent"
+                Click="ButtonVolume_Click">
+            <Image x:Name="img_volume" 
+                   Source="assets/Volume.png"
+                   Stretch="Uniform"
+                   MouseEnter="ImageVolume_MouseEnter">
+            </Image>
+        </Button>
+
+        <Label x:Name="lb_volume" 
+               Content="50%"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Bottom"
+               Margin="35,0,0,85"
+               FontSize="36"
+               FontWeight="Bold"
+               Foreground="#FFCD75">
+        </Label>
+
+        <Slider x:Name="sl_volume"
+                Orientation="Horizontal"
+                Width="400"
+                VerticalAlignment="Bottom"
+                HorizontalAlignment="Center"
+                Margin="0,0,0,155"
+                Minimum="0"
+                Value="50"
+                Maximum="100" ValueChanged="SliderVolume_ValueChanged">
+        </Slider>
+
+        <Button x:Name="btn_home" 
+                Width="60"
+                Height="60"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                Margin="0,0,15,15"
+                Background="Transparent"
+                BorderBrush="Transparent"
+                Click="ButtonHome_Click"
+                MouseEnter="ButtonHome_MouseEnter"
+                MouseLeave="ButtonHome_MouseLeave">
+            <Image x:Name="img_home" 
+                   Source="assets/Home.png"
+                   Stretch="Uniform">
+            </Image>
+        </Button>
+    </Grid>
+</Window>
