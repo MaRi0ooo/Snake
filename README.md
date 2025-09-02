@@ -1,5 +1,5 @@
 # 🐍 Snake Game (WPF, C#)
-![GitHub repo size](https://img.shields.io/github/repo-size/MaRi0ooo/dds-converter)
+![GitHub repo size](https://img.shields.io/github/repo-size/MaRi0ooo/Snake)
 ![Made with C#](https://img.shields.io/badge/Made%20with-C%23-blue)
 ![Built with Visual Studio](https://img.shields.io/badge/Built%20with-Visual%20Studio-purple)
 
@@ -18,8 +18,9 @@ Your goal is to control the snake, eat apples 🍎, and grow as long as possible
 
 ## 🖼️ Screenshots
 
-![Gameplay Screenshot](images/)  
-![Game Over Screen](images/)
+![Start Screenshot](https://postimg.cc/cgPtVh8M)
+![Gameplay Screenshot](https://postimg.cc/mtfFjd4T)  
+![Options Screen](https://postimg.cc/4nh9pDr8)
 
 ---
 
