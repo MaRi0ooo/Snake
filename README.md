@@ -1,4 +1,4 @@
-<img width="781" height="460" alt="image" src="https://github.com/user-attachments/assets/af2f2809-bc3f-4b3e-a1eb-d3a042401d41" /><img width="781" height="460" alt="image" src="https://github.com/user-attachments/assets/ccef1c06-3e7f-4249-a4d5-ff829b32889a" /># 🐍 Snake Game (WPF, C#)
+# 🐍 Snake Game (WPF, C#)
 ![GitHub repo size](https://img.shields.io/github/repo-size/MaRi0ooo/Snake)
 ![Made with C#](https://img.shields.io/badge/Made%20with-C%23-blue)
 ![Built with Visual Studio](https://img.shields.io/badge/Built%20with-Visual%20Studio-purple)
