@@ -14,7 +14,6 @@ Your goal is to control the snake, eat apples 🍎, and grow as long as possible
 ---
 
 ## 🖼️ Screenshots
-*(Add your own screenshots in the `/images` folder and update the links below)*  
 
 ![Gameplay Screenshot](images/)  
 ![Game Over Screen](images/)
